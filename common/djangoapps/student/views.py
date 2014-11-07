@@ -1209,7 +1209,7 @@ def login_user(request, error=""):
                 AUDIT_LOG.warning(u"Login failed - password for {0} is invalid".format(email))
         return JsonResponse({
             "success": False,
-            "value": _('Email or password is incorrect.'),
+            "value": _('Email or password is incorrect.')+", "+"<a href='http://lms.pmphmooc.com/login#forgot-password-modal' target='_blank'>忘记密码?</a>",
             "failure_auth_count": failure_auth_count,
         })  # TODO: this should be status code 400  # pylint: disable=fixme
 
