@@ -114,6 +114,11 @@ require(["domReady!", "jquery", "jquery.form", "js/index"], function(doc, $) {
 
     accessible_modal(".edit-name", "#apply_name_change .close-modal", "#apply_name_change", "#index-main");
     accessible_modal(".edit-name", "#apply_name_change_file .close-modal", "#apply_name_change_file", "#index-main");
+     course_class_html = "" +
+	 % for item in settings.COURSE_CLASS_LIST:
+	     "<option value='${item[0]}'>${item[1]}</option>" +
+	 % endfor
+	 "";
 });
 </script>
 

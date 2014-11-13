@@ -146,6 +146,9 @@ def courses(request):
         ]
 
     }
+    sel_items = {
+        "subject": [[item[0], item[1]] for item in settings.COURSE_CLASS_LIST]
+    }
 
     con_col = {}
     con_courses = []

@@ -1,3 +1,4 @@
+#coding:utf-8
 """
 This is the default template for our main set of AWS servers.
 """
@@ -262,3 +263,26 @@ SESSION_INACTIVITY_TIMEOUT_IN_SECONDS = AUTH_TOKENS.get("SESSION_INACTIVITY_TIME
 
 ##### X-Frame-Options response header settings #####
 X_FRAME_OPTIONS = ENV_TOKENS.get('X_FRAME_OPTIONS', X_FRAME_OPTIONS)
+
+COURSE_CLASS_LIST = [
+                        ('ZJFL', u'职教分类'),
+                        ('JD', u'机电'),
+                        ('SK', u'数控'),
+                        ('MJ', u'模具'),
+                        ('DZDG', u'电子电工'),
+                        ('SWHG', u'生物化工'),
+                        ('GYMS', u'工艺美术'),
+                        ('QX', u'汽修'),
+                        ('SWSJ', u'商务会计'),
+                        ('MRMF', u'美容美发'),
+                        ('SY', u'摄影'),
+                        ('CS', u'厨师'),
+                        ('FZ', u'服装'),
+                        ('QCWX', u'汽车维修'),
+                        ('JS', u'驾驶'),
+                        ('GGSJ', u'广告设计'),
+                        ('XXAQ', u'信息安全'),
+                        ('DZSW', u'电子商务'),
+                        ('YSDM', u'影视动漫'),
+                        ('3GRJ', u'3G软件开发'),
+                     ]

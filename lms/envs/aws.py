@@ -1,3 +1,4 @@
+#coding:utf-8
 """
 This is the default template for our main set of AWS servers. This does NOT
 cover the content machines, which use content.py
@@ -392,3 +393,26 @@ if not os.path.exists(load_thesaurus_path):
     open(str(load_thesaurus_path), 'a').close()
 
 THESAURUS_PATH = load_thesaurus_path
+
+COURSE_CLASS_LIST=[
+                        ('ZJFL', u'职教分类'),
+                        ('JD', u'机电'),
+                        ('SK', u'数控'),
+                        ('MJ', u'模具'),
+                        ('DZDG', u'电子电工'),
+                        ('SWHG', u'生物化工'),
+                        ('GYMS', u'工艺美术'),
+                        ('QX', u'汽修'),
+                        ('SWSJ', u'商务会计'),
+                        ('MRMF', u'美容美发'),
+                        ('SY', u'摄影'),
+                        ('CS', u'厨师'),
+                        ('FZ', u'服装'),
+                        ('QCWX', u'汽车维修'),
+                        ('JS', u'驾驶'),
+                        ('GGSJ', u'广告设计'),
+                        ('XXAQ', u'信息安全'),
+                        ('DZSW', u'电子商务'),
+                        ('YSDM', u'影视动漫'),
+                        ('3GRJ', u'3G软件开发'),
+                     ]
